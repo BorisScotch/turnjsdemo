@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+
+<title>SOMOS REVISTA</title>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="icon" type="image/svg+xml" href="imagenes/favicon.svg">
+<link rel="icon" type="image/png" href="imagenes/favicon.png">
+<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/main.css">
+<link rel="stylesheet" type="text/css" href="CSS/CHANEWEI.css">
+
+
+<script type="text/javascript" src="JS/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="JS/bootstrap.min.js"></script>
+<script type="text/javascript" src="JS/turn.min.js"></script>
+<script type="text/javascript" src="JS/main.js"></script>
+<script src="https://use.fontawesome.com/e379886307.js"></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="">SOMOS N° X</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar top-bar"></span>
+				<span class="icon-bar middle-bar"></span>
+				<span class="icon-bar bottom-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Versión Anterior</a></li>
+				<li><a href="#about">Descargar versión PDF</a></li>
+				<li><a href="#contact">Contactanos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<!-- CADA FOTO ES UNA CARILLA DE LA REVISTA -->
+		<div id="magazine">
+			<div  id="uno" class="hard">
+				<img class="img-responsive" src="PDF/1.jpg">
+			</div>
+			<div id="dos">
+				<img class="img-responsive" src="PDF/2.jpg">
+			</div>
+			<div id="tres">
+				<img class="img-responsive" src="PDF/3.jpg">
+			</div>
+			<div id="cuatro">
+				<img class="img-responsive" src="PDF/4.jpg">
+			</div>
+			<div id="cinco">
+				<img class="img-responsive" src="PDF/5.jpg">
+			</div>
+			<div id="seis">
+				<img class="img-responsive" src="PDF/6.jpg">
+			</div>
+			<div id="siete">
+				<img class="img-responsive" src="PDF/7.jpg">
+			</div>
+			<div id="ocho">
+				<img class="img-responsive" src="PDF/8.jpg">
+			</div>
+			<div id="nueve">
+				<img class="img-responsive" src="PDF/9.jpg">
+			</div>
+			<div id="diez">
+				<img class="img-responsive" src="PDF/10.jpg">
+			</div>
+
+
+		</div>
+
+		<!-- BOTONES PARA PRÓXIMA Y ANTERIOR PÁGINA -->
+		<ul class="pager flip-control">
+			<li class="previous"><a id="previousPage" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></li>
+			<li class="next"><a id="nextPage" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+		</ul>
+	</div> 
+
+<!--<script type="text/javascript">
+	
+$("#magazine").bind("turning", function(event, page, view) {
+	if (page==1) {
+		event.preventDefault(); //will not happen at page 1
+			}else{
+		window.history.replaceState(null, null, "/" +page);
+		}
+	});
+
+</script>-->
+<script type="text/javascript">
+	document.querySelector( ".navbar-toggle" ).addEventListener( "click", function() {
+  this.classList.toggle( "active" );
+});	
+</script>
+
+</body>
+</html>

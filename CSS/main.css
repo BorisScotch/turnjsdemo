@@ -1,0 +1,167 @@
+html {
+	overflow: hidden;
+}
+
+body {
+	background:#ccc;
+	font-family: 'CHANEWEI';
+}
+body .container h1 {
+	text-align: center;
+	color: #404041;
+}
+#magazine {
+	margin: 0px auto;
+	height: 488px;
+	margin-top: 15px;
+}
+#magazine .turn-page {
+	background-color:#ccc;
+}
+.turn-page-wrapper {
+	height: 100vh;
+}
+div.flip-control {
+    padding: 15px;
+    text-align: center;
+    margin: 0px auto;
+}
+div.flip-control a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+}
+li.previous {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 999;
+}
+li.next {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999;
+}
+.indexation {
+	text-align: center; 
+	margin: 0px auto; 
+	padding-top: 15px;
+}
+/* always collapsed navbar */
+nav.navbar.navbar-inverse.navbar-fixed-top {
+	background-color: #ccc;
+	border: none;
+	margin-bottom: 5px
+}
+.navbar-collapse.collapse.in { 
+	display: block !important; 
+}
+.navbar-header {
+  float: none !important;
+}
+.navbar-toggle {
+
+    position: absolute;
+    display: block !important;
+    right: 5px;
+    top: 4px
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+}
+.navbar-nav>li {
+  float: none !important;
+}
+.navbar-collapse.collapse.in{
+  display:block !important;
+}
+.navbar {
+    position: relative !important;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%; 
+}
+.navbar-brand {
+	float:none;
+	font-size: 25px !important;
+}
+ul.navbar-nav li a {
+	text-align: center;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color:#ccc !important;
+}
+* Hamburguer to X animation */
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: rgb(56, 76, 95);
+}
+.navbar-default .navbar-toggle.navbar-transparency .icon-bar {
+  background-color: rgb(56, 76, 95);
+}
+.navbar-toggle:hover {
+    background: transparent !important;
+}
+
+.navbar-toggle.active .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+}
+ .navbar-toggle.active .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+  .navbar-toggle.active .middle-bar {
+    opacity: 0;
+}
+.navbar-toggle.active .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+@media (max-width: 766px) {
+	li.previous #previousPage {
+		width: 100%;	
+	}
+	li.next #nextPage {
+		width: 100%;
+	}
+	li.previous {
+		width: 50%;
+	}
+	li.next {
+		width: 50%;
+	}
+	.pager li>a, .pager li>span {
+		border-radius: 3px;
+	}
+}
+
+@media (min-width: 767px) {
+	#magazine {
+		height: 807px;
+	}
+	li.previous {
+		position: absolute;
+		left:10px;
+		top: 50%;
+		z-index: 999;
+	}
+	li.next {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		z-index: 999;
+	}
+
+}
