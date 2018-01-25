@@ -153,15 +153,33 @@ ul.navbar-nav li a {
 	}
 	li.previous {
 		position: absolute;
-		left:10px;
-		top: 50%;
+		left:	0px;
+		top: 55px;
 		z-index: 999;
+	}
+	li.previous a#previousPage {
+		height: 100%;
+		width: 100px;
+		line-height:60em; 
 	}
 	li.next {
 		position: absolute;
-		right: 10px;
-		top: 50%;
+		right: 0px;
+		top: 55px;
 		z-index: 999;
-	}
 
+	}
+	li.next a#nextPage {
+		height: 100%;
+		width: 100px;
+		line-height:65em; 
+	}
+	.pager li>a, .pager li>span {
+		border-radius: 3px;
+		background-color: transparent;
+		border:none;
+	}
+	.pager li>a:focus {
+		background-color: transparent;
+	}
 }
